@@ -79,17 +79,18 @@ exclude_patterns = ['_build', '**.ipynb_checkpoints']
 
 # -- Options for HTML output -------------------------------------------------
 
+# -- Options for HTML output
+html_theme = 'sphinx_rtd_theme'
+
+# -- Options for EPUB output
+epub_show_urls = 'footnote'
+
 # -- Options for PDF output
 latex_engine = 'xelatex'
 latex_use_xindy = False
 latex_elements = {
     'preamble': '\\usepackage[UTF8]{ctex}\n',
 }
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
-html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
